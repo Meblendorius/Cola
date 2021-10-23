@@ -1,0 +1,11 @@
+POP: pop.seudominio.com.br porta 110/995 ssl
+IMAP: imap.seudominio.com.br porta 143/993- ssl
+SMTP: smtp.seudominio.com.br porta 587/465- ssl
+
+Ambiente compartilhado nao tem SSL 
+
+pode colocar o imap.u.inova, quanto imap.veloxmail
+
+
+	
+

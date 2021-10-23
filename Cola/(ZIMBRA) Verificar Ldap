@@ -1,0 +1,27 @@
+zmlocalconfig -s | grep ldap 
+-l mostra a senha
+
+da pra ver no mxhero tambem
+
+UMA url por servidor
+
+ldap_url = ldap://corpldap01.a.inova.com.br:389 ldap://corpldap02.a.inova.com.br:389 ldap://corpldap03.a.inova.com.br:389
+zimbra_class_ldap_client = com.zimbra.cs.ldap.unboundid.UBIDLdapClient
+zimbra_class_provisioning = com.zimbra.cs.account.ldap.LdapProvisioning
+zimbra_ldap_password = 7HZ7kyyp 
+
+dap_url = ldap://r-du4.u.inova.com.br:389
+zimbra_class_ldap_client = com.zimbra.cs.ldap.unboundid.UBIDLdapClient
+zimbra_class_provisioning = com.zimbra.cs.account.ldap.LdapProvisioning
+zimbra_ldap_password = GPqZe2MCx 
+
+
+mta-in.c.inova.com.br
+
+
+ldap.a.inova.com.br
+------------------------------------------------------------------------------
+
+paulicon.com
+rever
+luna.com.br

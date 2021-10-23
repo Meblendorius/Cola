@@ -1,0 +1,8 @@
+Comandos frequentes
+
+DIG mx
+
+WHOIS
+	status= on hold= congelado, published=funcionando
+	nserver
+HOST

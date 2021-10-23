@@ -1,0 +1,8 @@
+Certificados e Protocolos - Tipos
+
+SSL- Protocolo de segurança, saindo do ambiente.
+DKIM- mostra para o destinatário que é de confiança OX
+SRV- mostra para o destinatário que é de confiança
+SPF- certificado
+DMARC- validador de envio, não tem no mxhero
+

@@ -1,0 +1,77 @@
+
+Em nosso ambiente, podemos configurar as contas na ferramenta (Outlook) de três diferentes maneiras:
+
+protocolo POP: Sincroniza apenas a caixa de entrada do usuário, baixa as mensagens e as remove do servidor caso não seja utilizada a opção "deixar cópia no servidor".
+
+protocolo IMAP: Sincroniza as pastas, subpastas e suas respectivas mensagens.
+
+Zimbra Connector para outlook: É um plugin instalado no outlook, que permite que as contas sincronizem mensagens, contatos e agenda, além de outros recursos como Lista de endereços global (GAL) e etc. Só pode ser utilizado em contas professional.
+
+Para realizar o Download do Zimbra Connector, acesso o link e baixe o Connector conforme sua versão de Zimbra. Para obter a versão do Zimbra, clique na seta no canto superior direito do webmail (onde está o nome da conta) e vá na opção "sobre".
+POP
+
+1) Clique em "Iniciar"(Do lado esquerdo inferior);
+2) Vá em Configurações -> Painel de Controle;
+3) Clique em na opção "E-mail";
+4) Clique em "Mostrar Perfis";
+5) Clique em Adicionar;
+6) Insira um nome, e clique em OK;
+7) Selecione a terceira opção "Definir manualmente as configurações...", e clique em "Avançar";
+8) Deixe a primeira opção "E-mail da Internet" habilitada, e clique em "Avançar";
+
+9) Agora você precisa inserir seus dados:
+
+Nome :"Nome da conta"
+Endereço de E-mail : nomedaconta@seudominio.com.br
+
+Tipo de Conta : POP3
+Servidor de entrada : pop.seudominio.com.br
+Servidor de saída : smtp.seudominio.com.br
+
+Nome do usuário : nomedaconta@seudominio.com.br
+Senha : sua senha
+
+10) Clique em "Mais configurações";
+
+
+11) Na aba "Servidor de saída", habilite a opção "Meu servidor de saída (SMTP) requer autenticação";
+12) Na aba "Avançado" Mude a porta do servidor de entrada para: 110 e a porta do servidor de saída : 587, selecione a opção "Deixar uma cópia das mensagem no servidor";
+13) Clique em OK;
+14) Clique na opção "Testar configurações de conta";
+15) Verifique se os testes estão OK;
+16) Clique em Avançar, e depois Concluir;
+17) Abra seu Outlook, e escolha o perfil que você criou na etapa (6).
+
+IMAP
+
+1) Clique em "Iniciar"(Do lado esquerdo inferior);
+2) Vá em Configurações -> Painel de Controle;
+3) Clique em na opção "E-mail";
+4) Clique em "Mostrar Perfis";
+5) Clique em Adicionar;
+6) Insira um nome, e clique em OK;
+7) Selecione a terceira opção "Definir manualmente as configurações...", e clique em "Avançar";
+8) Deixe a primeira opção "E-mail da Internet" habilitada, e clique em "Avançar";
+
+9) Agora você precisa inserir seus dados:
+
+Nome :"Nome da conta"
+Endereço de E-mail : nomedaconta@seudominio.com.br
+
+Tipo de Conta : IMAP
+Servidor de entrada : imap.seudominio.com.br
+Servidor de saída : smtp.seudominio.com.br
+
+Nome do usuário : nomedaconta@seudominio.com.br
+Senha : sua senha
+
+10) Clique em "Mais configurações";
+
+
+11) Na aba "Servidor de saída", habilite a opção "Meu servidor de saída (SMTP) requer autenticação";
+12) Na aba "Avançado" Mude a porta do servidor de entrada para: 143 e a porta do servidor de saída : 587, selecione a opção "Deixar uma cópia das mensagem no servidor";
+13) Clique em OK;
+14) Clique na opção "Testar configurações de conta";
+15) Verifique se os testes estão OK;
+16) Clique em Avançar, e depois Concluir;
+17) Abra seu Outlook, e escolha o perfil que você criou na etapa (6). 

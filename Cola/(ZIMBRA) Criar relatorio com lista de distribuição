@@ -1,0 +1,21 @@
+su zimbra
+
+zmprov gadl dakhia.com.br
+
+copia tudo
+
+vim lista
+
+cola
+
+criar fim e inicio(gdlm)
+
+zmprov -f lista
+chmod 777 lista
+
+zmprov-f lista > lista_dis.txt
+
+
+comando scp??
+
+tcr

@@ -1,0 +1,6 @@
+(Zimbra)verificar limite de envio
+
+thiago.lemos@r-su-out02:~$ /usr/local/bin/postpiting-list.pl | grep unihospsaude.com.br
+
+5 min 240
+24hr 670

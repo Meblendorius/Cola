@@ -1,0 +1,15 @@
+
+zmprov ca administrativo@sccal.com.br Inova@2021
+
+set acount cos
+Comando para alterar plano: zmprov sac rosanamaschio@fcsaudevida.com.br ProfessionalEdition
+
+Atualiza o COS: zmprov ma sac@motoone.com.br StandardEmail_10gb
+modify acount
+
+Comando pra atualizar os dados no servidor: zmprov fc -a all 
+
+rzu1 tanto faz a máquina, ele aplica no ambiente inteiro
+corp1 tanto faz
+
+

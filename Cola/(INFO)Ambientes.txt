@@ -1,0 +1,27 @@
+LICENÇA
+
+maioria governo- tribunais eleitorais
+Passar para a operação(atualização)
+Eles tem um datacenter próprio
+
+AMBIENTE DEDICADO
+http s, segurança certificado
+ painel  dedicado
+todos tem mxhero
+
+AMBIENTE COMPARTILHADO
+licença cos- tipo de conta que o cliente compra, bussines email/2gb/5gb
+Standard 10gb, compartilha pastas e mais funções
+
+conecctor- plugin que sincroniza contatos e agendas zimbra no outlook
+Professional 25gb
+Premium 50gb
+
+
+Corp C/AWS- novos clientes, mais chamados
+Corp U- clientes antigos,
+não possui certificado
+pode passar o dominio da inova
+
+AMBIENTE SEMIDEDICADO
+https, segurança certificado- só do webmail, não da por pop, imap smtp

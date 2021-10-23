@@ -1,0 +1,21 @@
+NOTAS GERAIS INOVA
+
+hospedamos sites mas não damos suporte
+
+
+Mxhero= recebe mensagens 
+MTA- recebe mensagens e envio, mais rustico que o mx 
+MailBOX-usuario 
+
+Office 365- poucos chamados Pesquise na internet ou abra chamado para microsoft (Demorado e pouco recomendado),sem acesso ao custommers
+
+Status- On-hold foi congelado, não pagamento do dominio pela inova(anual)
+
+provedor inovanet- nos fazemos a cobrança dele na registrobr-(registra os dominions da internet)
+
+55 mensagens por 5 min e 660 por 24, CC se aplica
+ 
+u.inova CORP
+c.inova CORP
+a.inova AWS
+z.inova Dedicado

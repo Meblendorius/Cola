@@ -1,0 +1,26 @@
+Exportar agenda e contatos 
+
+Pegue todas as contas do dominio.
+
+zmprov -l gaa dominio.com.br > /tmp/accounts_dominio.txt
+
+Criar screen 
+
+screen -S fazerpips
+
+CTRL + A depois D
+
+screen -r entra
+screen -x entra forçado
+screen -ls ver as que estão abertas 
+
+Cria uma pasta para ficar todos os arquivos
+mkdir contatos_dominio
+mkdir calendario_dominios
+
+
+for account in `cat /tmp/accounts_dominio.txt`; do zmmailbox -z -m $account -t 0 getRestURL "/Emailed Contacts?fmt=csv" > /tmp/contact_dominio/$account.csv; done
+
+for account in `cat /tmp/accounts_dominio.txt`; do zmmailbox -z -m $account getRestURL "/Calendar/?fmt=ics" > /tmp/calendar_dominio/$account.ics; done
+
+tar -cvzf sampleArchive.tar.gz * 

@@ -1,0 +1,9 @@
+estrela verde- endereço interno para armazenar e compartilhar todos os contatos do email, nomes,fotos
+
+entre no servidor e rode um comando pra sincronizar *nota- atualizar Gal
+
+usuario com icone do globo e pessoa- ta sincronizado no gal e salvo no servidor
+
+atualização de GAL
+
+zmgsautil forceSync -a galsync@dominio.com.br -n InternalGAL ou zimbra

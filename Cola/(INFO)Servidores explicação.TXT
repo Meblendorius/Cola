@@ -1,0 +1,11 @@
+
+ldapi- verifica a consulta, banco de dados mais simples paras as contas
+AD- Active Director, coloca uma instancia que vai acessar. Nivel de segurança a mais
+fallback, se o ad n aceitar pode aceitar a senha do zimbra
+
+servidor de saida 
+
+servidor de entrada 
+
+temos o firewall que vai direcionar as conexões,
+acessar o webmail por porta tem que ter verificação.

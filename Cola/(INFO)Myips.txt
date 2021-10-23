@@ -1,0 +1,4 @@
+os ips das maquinas não são os mesmo ips que servem de envio e recebimento.
+Para acessar o sudo Myips no r-tu1, 
+o corp vai mostrar o ip do mxherocorp e mxlite são o mesmo.
+para ver do aws, precisa do root

@@ -1,0 +1,7 @@
+1- Acesse o site https://www.adobe.com/support/flashplayer/debug_downloads.html 
+2- Baixe o arquivo "Download the Flash Player projector content debugger" referente ao sistema operacional desejado 
+3 - após o download do arquivo, execute o mesmo e selecione o menu arquivo / abrir 
+4 - Após isso, coloque o caminho: http://mxlite.inova.net:8080/mxhero/Main.swf 
+5 - caso apareça alguma mensagem de erro, como a abaixo, basta clicar em Continuar. Qualquer dúvida estamos a inteira disposição. 
+
+

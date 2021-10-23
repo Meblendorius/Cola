@@ -1,0 +1,6 @@
+[root@zimbrambox01 ~]# cd /home/daniel.silva/
+[root@zimbrambox01 daniel.silva]# ls
+fuhrosouto  grupofan.com  libera  nossasaude  relatorio_usage.csv  scmf  unihospsaude
+[root@zimbrambox01 daniel.silva]# screen -x fuhrosouto 
+
+ctrl +a+d para sair da screen

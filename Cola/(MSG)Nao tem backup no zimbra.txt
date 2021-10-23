@@ -1,0 +1,3 @@
+
+Infelizmente o zimbra não disponibiliza nenhuma ferramenta de armazenamento online semelhamente ao onedrive.
+Será necessario realizar o backup local ou realizar o upgrade da conta(Será necessario verificarmos primeiramente qual classe a conta usa para ver a possibilidade do upgrade.) 

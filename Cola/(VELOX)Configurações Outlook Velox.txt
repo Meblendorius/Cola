@@ -1,0 +1,35 @@
+Velox
+
+Velox- email: suporte.velox@inova.net
+
+dominio: veloxmail.com.br
+
+
+Velox não tem IMAP
+
+
+
+
+
+
+Luiza, bom dia.
+
+Segue em anexo o tutorial para configuração da conta no Outlook, por gentileza insira com os apontamentos abaixo:
+
+pop.veloxmail.com.br	porta 110
+
+smtp.veloxmail.com.br	porta 587
+
+Sem Autentificação (SSL)
+
+Qualquer dúvida estamos a inteira disposição.
+
+vendas@joaolibano.com.br
+
+
+Encaminhar 
+
+
+Zelia
+edvaroliveira@veloxmail.com.br
+

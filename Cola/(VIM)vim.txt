@@ -1,0 +1,33 @@
+thiagolemos@asus:~/Documentos/SSH$ vim lista.txx
+thiagolemos@asus:~/Documentos/SSH$ vim lista.txt
+thiagolemos@asus:~/Documentos/SSH$ for x in $(cat lista.txt) ; do dig webmail.${x} @8.8.8.8 +short ;  done
+zimbra.inova.net.
+200.143.167.105
+zimbra.inova.net.
+200.143.167.105
+thiagolemos@asus:~/Documentos/SSH$ for x in $(cat lista.txt) ; do echo Dom: ${X}; dig webmail.${x} @8.8.8.8 +short ; echo "" ;  done
+Dom:
+zimbra.inova.net.
+200.143.167.105
+
+Dom:
+zimbra.inova.net.
+200.143.167.105
+
+thiagolemos@asus:~/Documentos/SSH$ for x in $(cat lista.txt) ; do echo Dom: ${x}; dig webmail.${x} @8.8.8.8 +short ; echo "" ;  done
+Dom: inova.com.br
+zimbra.inova.net.
+200.143.167.105
+
+Dom: inova.net
+zimbra.inova.net.
+200.143.167.105
+
+
+verificar o spf 
+for x in $(cat dominios_velox) ; do dig txt ${x} | grep TXT ; done
+
+verificar o provedor
+for x in $(cat dominios.txt) ; do nslookup -type=NS ${x} | grep ${x}; done
+
+

@@ -1,0 +1,6 @@
+From forjado
+
+from=<bounces+15361255-27c8-leonice_gelog=tvlar.com.br@emailmkt.alianca.com.vc>
+Sep 17 22:51:07 mxcorp3 postfix/postsuper[38152]: warning: invalid mail queue id: leonice_gelog@tvlar.com.br
+Sep 17 22:51:07 mxcorp3 postfix/postsuper[38163]: warning: invalid mail queue id: leonice_gelog@tvlar.com.br
+

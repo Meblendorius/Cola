@@ -1,0 +1,73 @@
+MXHERO
+
+Erro Mxhero
+não recebe e-mail externo, mas pode receber do mesmo dominio e pode enviar
+
+AWS- http://mxhero01.a.inova.com.br/mxhero/Main.swf    
+senha: i7Nvr@%=@)%
+
+Corp- http://mxcorp.u.inova.com.br/mxhero
+senha: MXh3R0@#4581
+
+
+ip: 179.190.22.43
+Lite- http://mxlite.u.inova.net:8080/mxhero/Main.swf
+senha:MXh3R0#@1854
+
+http://hsaomxhero01.a.inova.com.br:8080/mxhero/Main.swf
+
+i7Nvr@%=@)%
+
+mta-in.c.inova.com.br
+
+hsaomxhero - 10.0.1.226
+mxcorp-db - 192.168.6.150
+mxhero-db1-sp3 - 192.168.55.112
+mxlite - 192.168.6.69
+
+
+rdesktop -g 1300x600 192.168.6.233
+
+Mxcorp.zsuite.com.br- revenda
+
+grupo- criação de regra
+fonte dos dados-  automatico= aparece como zimbra
+aliase- apelido do e-mail
+
+backup- copia de backup, cco remetente e destinatario
+
+
+FASTINDUSTRIA
+regras: criar conta de _bkp, sincronizar, adicionar as regras copia de  bkp e remetente e cco
+
+Incasa usa MXlite, o mx filter.uplan.com.br é um antiSpam externo que aponta pra nós, poucos clientes usam isso
+
+
+
+Prezado, boa tarde
+
+Realizamos a sincronização da conta.
+
+Qualquer dúvida estamos a inteira disposição.
+
+
+
+
+192.168.80.130
+corpldap01.a.inova.com.br 389
+
+uid=zimbra,cn=admins,cn=zimbra
+
+dc=botafogo,dc=net,dc=br
+
+7HZ7kyyp
+
+
+Procedimento: https://inovacorp.atlassian.net/wiki/spaces/atendimento/pages/2187919369/Django+AdSync+-+Sincroniza+o+de+dom+nios+do+MxGateway
+
+Acesso AdSync SP3: http://10.0.1.129:8000/admin/django_celery_beat/periodictask/
+Acesso AdSync MxLite: http://192.168.75.20:8000/admin/login/?next=/admin/
+
+OBS: para acessar o AdSync do MxLite precisa estar na VPN do FortClient
+
+11 2182 8901

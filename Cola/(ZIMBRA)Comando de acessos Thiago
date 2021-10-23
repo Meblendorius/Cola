@@ -1,0 +1,9 @@
+
+
+mkdir /home/thiago.lemos/ ; 
+mkdir /home/thiago.lemos/.ssh ; 
+touch /home/thiago.lemos/.ssh/authorized_keys ; 
+chown -R thiago.lemos:allusers /home/thiago.lemos/ ; 
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDXtVnWj740+5/QjRsSkjtw/pyuT3z3SYYzf0XKiglg1Aeb54tTSN07p4r2Y4GX0DSBtuwy7MGOPRymqjOCSheqQfZkHh3c91+ZO7VzF8kMGfOfA2mqV7hPZeI8PLfIo3QhWqaI5i4f+NFvAkMj/8AnNl5X+m+xzOgxabcbvF7or/cG5DiVxkhsvOnaO579HOS7GIUu7sC63LhGYXSsh7JtBKhLhKD6CPpqn1KEC+YH8mVc2ohJyanZmHryUhTVRrNv86lYGCaKKgCS5YbkZDxmceSOcVrdQy6M/Kns/ANokv7BaUquPdZ6G5GLr0/B9SvDSRYI/6QAXRHYPfDLq1wacAG8exO9IbtO4w9h+PghHN10jm/+us6CZaqriwZzZVTF2VRPE78hZFXN5M/lhCM7wHCrNOLBpKLX/beo+i9HzlyitLqV/XTNiSbEGeppZjdJRdKJ/yu4S+n1lww7NV+D2AQTx4OxX0iesp3zQfcO93zjsGRi9kN7pmmrSzRgJ3M= thiagolemos@asus" > /home/thiago.lemos/.ssh/authorized_keys
+
+

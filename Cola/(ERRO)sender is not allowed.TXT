@@ -1,0 +1,11 @@
+Sender is not allowed
+
+
+Prezado,
+Boa tarde.
+
+Verificamos que o erro em questão informa que estão enviando em nome da lista controldesk.bradesco@crc.net.br, onde o servidor não permite que seja enviado com um FROM forjado ou que não seja a mesma conta configurada para recebimento de emails.
+Poderia me informar qual conta está realizando o envio ?
+Ficamos no aguardo.
+
+Qualquer dúvida estamos a inteira disposição.

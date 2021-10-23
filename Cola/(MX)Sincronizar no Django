@@ -1,0 +1,9 @@
+Procedimento: https://inovacorp.atlassian.net/wiki/spaces/atendimento/pages/2187919369/Django+AdSync+-+Sincroniza+o+de+dom+nios+do+MxGateway
+
+Acesso AdSync SP3: http://10.0.1.129:8000/admin/django_celery_beat/periodictask/
+Acesso AdSync MxLite: http://192.168.60.127:8000/admin/login/?next=/admin/
+
+OBS: para acessar o AdSync do MxLite precisa estar na VPN do FortClient
+
+login: root
+senha: plo147258

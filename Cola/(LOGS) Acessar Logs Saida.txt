@@ -1,0 +1,18 @@
+relay= onde a mensagem foi entregue
+helo= de onde a mensagem veio
+verificar status
+
+acessar o filtro
+root@asus:/home/thiagolemos# ssh -i /home/thiagolemos/Downloads/inova.pem centos@3.218.154.111
+
+May  6 14:30:20 mxlite3 postfix/smtp[27239]: 46E0E1D02D5: to=<suporte@nacionalti.inf.br>, relay=smtpfilter-pool01.a.inova.com.br[3.211.196.41]:25, delay=1.4, delays=0.02/0.01/0.47/0.87, dsn=2.0.0, status=sent (250 2.0.0 Ok: queued as D1A33464000)
+
+o id fa fila
+
+pesquisa no filtro
+
+acessar onde saiu (relayout)
+
+severbusy, verificar ips, nme sempre vai estar com report
+tem um cat para ver o ip
+

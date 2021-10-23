@@ -1,0 +1,624 @@
+sudo su zimbra
+    • QUANTIDADE DE CONTAS POR CLASSE DE SERVIÇO
+zmprov cta dominio.com.br
+    • VER MEMBROS DAS LISTAS DE DISTRIBUIÇÃO 
+zmprov gdlm grupo@dominio.com.br
+
+    • remover membro da lista
+zmprov rdlm listatese@inovasuporte.xsp.com.br artur.santos@inovasuporte.xsp.com.br
+
+    • VERIFICAR LOG DE DELETE OU SE A CONTA BAIXOU COMO POP
+cat /opt/zimbra/log/mailbox.log | grep “conta@dominio.com.br" | grep -i 'pop'
+cat /opt/zimbra/log/mailbox.log | grep “conta@dominio.com.br" | grep -i 'delete’
+    • VERIFICAR SE POSSUI BACKUP DA CONTA
+Zmbackupquery -a conta@dominio.com.br
+    • REINDEX 
+zmprov rim conta@dominio.com.br start      >>  Dar início ao processo
+zmprov rim conta@dominio.com.br status    >>  Acompanhar o processo
+    • FORÇAR GALSYNC 
+zmgsautil forceSync -a galsync@dominio.com.br  -n InternalGAL
+    • VISUALIZAR MEMBROS DE UMA LISTA
+zmprov gdlm lista@dominio.com.br
+    • VERIFICAR TODAS AS LISTAS DO DOMÍNIO
+zmprov gadl domínio.com.br
+zmprov gadl imodata.net
+    • LISTAR ALIAS E REDIRECIONAMENTOS
+zmprov -l gaa -v rtek.com.br | egrep '# name|zimbraPrefMailForwardingAddress|zimbraMailAlias'
+
+
+zmprov -l gaa -v ortep.com.br | grep '# name|zimbraPrefMailForwardingAddress' > ortep.txt
+
+    • LISTAR TODOS OS USUÁRIOS DE UM DOMÍNIO
+zmprov -l gaa beijer.com.br
+    • ADICIONAR LISTA PARA ENVIAR EM NOME DE
+zmprov grr dl lista@dexter.com.br usr usuario@dexter.com.br sendAsDistList
+    • Remover enviar em nome de lista 
+zmprov rvr dl distributionlist@zimbra.lab usr user@zimbra.lab sendToDistList
+    • ALTERAR A SENHA DE UM USUÁRIO
+zmprov sp usuario@dominio.com.br 'novasenha'
+ALTER CLASSE DE SERVIÇO CONTA
+zmrpov saco conta@dominio classe de serviço 
+CRIAR VIM INICIO E FIM 
+%s/^/ g counteúdo 
+%s/$/ conteúdo g
+    • RENOMEAR UM DOMÍNIO (Tomem muito cuidado)
+zmprov -l rd diaco.com.br diaco.com.br.old
+    • CRIAR UM USUÁRIO
+zmprov ca usuario@dominio.com.br 'senhaaqui'
+    • RENOMEAR UMA LISTA DE DISTRIBUIÇÃO
+zmprov rdl lista@beijer.com.br novalista@beijer.com.br
+    • OCULTAR UMA LISTA DE DISTRIBUIÇÃO DA GAL
+zmprov mdl lista@beijer.com.br  zimbraHideInGal TRUE
+    • EXIBIR UMA LISTA DE DISTRIBUIÇÃO DA GAL
+zmprov mdl lista@beijer.com.br  zimbraHideInGal FALSE
+    • ACOMPANHAR LOGS DE ENTREGA DE EMAIL/LOGIN/ERROS
+tail -f /opt/zimbra/log/mailbox.log | grep conta@dominio.com.br
+    • ACOMPANHAR LOGS DE AUTENTICAÇÃO
+tail -f /opt/zimbra/log/audit.log | grep conta@dominio.com.br
+
+
+
+    • DESCONGELAR DOMÍNIO VELOX
+Primeiro realizar a consulta:
+$ whois domínio.com.br
+Resultado a ser apresentado:
+status:  on-hold
+Acesse o servidor INOVCONS (10.0.0.221), depois execute o procedimento abaixo:
+OBS: PODE COPIAR ATÉ LOGIN E COLAR NO SERVIDOR
+shepp
+server epp.registro.br:700
+client-pem /usr/local/share/libepp_nicbr/ssl/inovaeppbr.pem
+pass sta+3268+his-221
+pw VOQVNFWEKI
+user 016
+connect
+login
+Pressionar enter:
+Depois disso feito, digite:
+domain info <domínio
+Ex.:
+shepp> domain info ebenezio.com.br
+Este comando irá retornar na tela as informações do domínio, pegue a linha que fala sobre a
+data expiração:
+Ex.:
+<domain:exDate>2007-12-27T19:21:37.0Z</domain:exDate>
+Finalmente, para descongelar o domínio, digite o seguinte comando:
+domain renew <dominio> -expdate <data de expiração>
+Ex.:
+shepp> domain renew ebenezio.com.br -expdate 2007-12-27T19:21:37.0Z
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+inova.teste@gmail.com
+plo147258
+
+
+
+
+
+acesso callbox
+
+login: lmarangoni
+senha: Inova@2017
+
+
+192.168.1.61
+ssh gustavo.nogueira@192.168.6.62 -i .ssh/id_rsa
+
+http://177.154.154.91/mani/cgi-bin/mani.cgi
+
+user: thamara.alves
+senha: inova2013
+acesso ao mx AWS
+
+mxhero01    Reschedule an immediate check    36    0    0    0    0    10.0.1.133
+UP    mxhero02    Reschedule an immediate check    35    1    0    0    0    10.0.4.78
+
+Logar como root digitando: su
+Senha: dCLW2xk5
+Acessar semidadeicado
+
+ssh gustavo.nogueira@10.0.1.34
+
+entrar com su
+
+dps acessar
+
+su - zimbra
+
+sudo openvpn --config /home/douglas/Downloads/gustavo_nogueira.ovpn
+
+
+Definir qual a conta que deverá possuir os direitos com as seguintes concessões:
+
+Adicionar a concessão adminConsoleZimletRights para a conta adminzimbradomain@dominiodocliente:
+
+tipo do destino : global
+
+nome do destino: domínio do cliente
+
+tipo do direito: Direito definido pelo sistema
+
+Nome do direito: adminConsoleZimletRights
+
+- É direito positivo
+
+Na aba Concessões herdades, poderá ver o direito adicionado como herdado (último registro).
+
+ 
+
+Adicionar direito de visualizar conta de e-mail sem ter a senha da conta. (Opção 'View Email')
+
+1- Verificar se cliente encaminhou termo de responsabilidade.
+
+2- Confirmar a conta no termo de responsabilidade.
+
+3- Configurar concessões na conta acima.
+
+tipo do destino : domain
+nome do destino: domínio do cliente
+tipo do direito: Direito definido pelo sistema
+Nome do direito: adminLoginAs
+- É direito positivo
+
+criar arquivo, Criar contas no zimbra
+
+vim nome
+
+para editar apertar i
+
+editar começo da linha 
+
+apertar esc
+
+depois :
+
+depois %s/^/sac 
+
+
+
+editar final da linha 
+
+apertar esc
+
+e digitar :
+
+depois %s/$/tipo do plano
+
+
+Para salvar apertar esc
+
+e digitar :wq!
+
+zmprov -f "executa as alterações feitas"
+ zmprov ma debora.machado@nexgroup.com.br zimbraPrefTimeZoneId '(GMT-03.00) Brasilia'
+
+zmprov ma <conta> zimbraAccountStatus active
+atualização de GAL
+
+zmgsautil forceSync -a galsync@sepaco.org.br -n InternalGAL ou zimbra
+
+
+zmprov ga username@domain.com | grep PrefFromDisplay
+
+Fazer o comando dentro de uma screen
+
+
+
+Realizar Backup
+zmrestore -a eduardo.basaglia@grupoegeu.com.br -ca -pre restored_ -rf -ignoreRedoErrors
+
+
+Por data e hr
+zmrestore -a condominios.25@fuhrosouto.com.br -ca -pre restored_ -restoreToTime "2021/05/21 18:00:00" -ignoreRedoErrors
+
+serve no U, no C é diferente.
+
+
+criar backup 
+zmbackup -a conta@dominio.com.br -f
+
+
+Backup ZXSUITE
+
+zxsuite backup getAccountInfo luiz.camargo@quality.com.br
+
+
+zxsuite backup doRestoreOnNewAccount administrativo@sfoggio.com.br restored_administrativo@sfoggio.com.br "21/10/2021 10:00:00" 
+
+
+
+
+zxsuite backup monitor f569b61d-4ce3-4788-82ac-a1f87a385701
+
+
+
+/usr/local/bin/postpiting-list.pl | grep dl-printer@embalatec.com.br
+
+Flash Cache
+
+zmprov fc -a all
+
+cat /var/log/zimbra.log | grep massificados@ipbseguros.com.br | grep suporte@skymail.com.br
+
+
+
+zmlocalconfig
+
+zmlocalconfig -s | grep ldap
+
+zimbraldapmaster.u.inova.com.br
+GPqZe2MCx
+
+rm -f /tmp/relatorio_usage.csv ; rm -f /tmp/gqu.txt ; rm -f /tmp/gaa.txt ; zmprov -l gaa "controllerbms.com.br" >> /tmp/gaa.txt ; sed -i "s/^/@/g" /tmp/gaa.txt ; for i in $(zmprov -l gas mailbox | grep -v r-zu); do zmprov gqu $i >> /tmp/gqu.txt ; done ; sed -i "s/^/@/g" /tmp/gqu.txt ; for i in $(cat /tmp/gaa.txt); do total=$(grep $i /tmp/gqu.txt | awk '{ print $2 }') ; usado=$(grep $i /tmp/gqu.txt | awk '{ print $3 }') ; usado1=$(echo "$usado/1024/1024" | bc ) ; total1=$(echo "$total/1024/1024" | bc ) ; echo "$i, $usado1, $total1" ; done >> /tmp/relatorio_usage.csv
+
+
+(COMANDO) Zimlet padrão
+
+zmprov ma conta@dominio.com.br zimbraZimletAvailableZimlets ""MTA IN (Logs de e-mails recebidos) velox: 10.0.1.229
+MTA OUT (Logs de e-mails enviados) velox: 10.0.1.142
+Mailbox (todos logs tb): velombox01.a.inova.com.br
+
+
+cat /var/log/zimbra.log | grep edwost@veloxmail.com.br
+
+
+
+anota, postpiting é assim, acessa a maquina de saída r-su7
+
+
+"/usr/local/bin/postpiting-list.pl | grep dominio.com"
+
+
+
+
+
+postpiting é responsavel por envios de emails, e bloqueia caso envia mais de 100 envios em menos de 5 minutos, e mais de 1000 envios no dia, e só é desbloqueado após 24 horas.
+
+zmprov createAliasDomain antigo.dominio.com novo.dominio.com 
+zimbraMailCatchAllForwardingAddress @novo.dominio.com
+Criação de contas
+
+fora do sudo su zimbra
+
+vim <arquivo>
+Cola todas as contas
+
+Inserir "ca" no começo de tudo:
+:%s/^/ca
+
+Inserir "Inova@2018" no final de tudo:
+:%s/$/ Inova@2018
+
+Sair e salvar:
+:wq!
+
+dentro do sudo su zimbra
+
+zmprov -f <arquivo>
+
+
+para alterar a senha da conta basta trocar o "ca" por "sp" 
+
+:%s/\t/,/g -> para ajustar a formatação do vim
+RELATORIOS DE DOMINIOS NO U
+
+/home/douglas/Documentos/zimbraScripts-master/scripts/./parseAccountsInfo.py -a admin@zu1.u.inova.com.br -p AmbU@@1222 -d "nome do dominio" -H 192.168.6.64 > "nome do arquivo".csv
+
+OBS: trocar o ip para mudar de servidor
+
+RELATORIOS DE DOMINIOS NO C
+
+/home/douglas/Documentos/zimbraScripts-master/scripts/./parseAccountsInfo.py -a admin@a.inova.com.br -p AmbC@%7865 -d dominio.com.br -H 34.194.194.61 > arquivo.csv
+
+RELATORIO SEMI
+
+/home/douglas/Documentos/zimbraScripts-master/scripts/./parseAccountsInfo.py -a admin@z.inova.com.br -p Gk#s3R6 -d dominio.com.br -H 40.117.224.32 > arquivo.csv
+Caso não consiga habilitar pelo jenova e não replica no Mxhero, segue abaixo o comando para criar manualmente:
+
+ssh mxcorp1 ou mxlite1
+
+/home/fernando.cainelli/scripts/mxh-create.pl -d dominio.com
+
+
+Assim irá gerar o login e a senha para o acesso.
+
+criar backup
+
+zmbackup -a compras@andradeconstrucoes.com.br -f
+Criar usando o passo à passo abaixo.
+Responder pro cliente com o login/senha e o site de acesso: endereço de acesso dos clientes: http://hosting.velop.net/cpanel
+
+
+
+
+endereço de acesso Admin: http://hosting.velop.net:2086
+
+login: veloxoff
+senha: sta+his2010
+
+Criando usuário para acessar o Painel de Hospedagem de site:
+1) Clicar em "Create a New Account"
+2) No campo "Domain", colocar o nome do domínio;
+3) No campo "Username", colocar o ID do domínio;
+4) No campo "Password", colocar a senha desejada, após escolhida a senha clicar em "Password Generator";
+5) Na opção "Choose a Package", selecionar a opção "Veloxoff_VeloBasic";
+6) Na opção "Settings", selecionar a opção "Português";
+7) Para finalizar clicar em "Create".
+
+zmgsautil createAccount -a galsync@grupostatus.com.br -n InternalGal --domain grupostatus.com.br -t zimbra -s $(zmhostname)
+
+instalação do programa da screen
+
+sudo apt-get update
+sudo apt-get install screen
+
+
+
+antes de entrar no sudo su zimbra
+
+screen -S nome
+aí digita o comando pra executar dentro dela
+dps aperta Ctrl+A+D que ele minimiza
+
+
+para visualizar novamente a screen
+
+screen -r <nome da screen>
+
+
+para ver as screens criadas
+
+screen -lsscreen -S 
+
+
+
+
+
+zmprov grr dl nome_da_lista@dominio.com.br usr usuario@dominio.com.br sendAsDistList
+Deletar contas
+
+fora do sudo su zimbra
+
+vim <arquivo>
+Cola todas as contas
+
+Inserir "da" no começo de tudo:
+:%s/^/da
+
+Sair e salvar:
+:wq!
+
+dentro do sudo su zimbra
+
+zmprov -f <arquivo>
+DELETAR UM DOMINIO POR COMANDO
+
+zmprov dd domain.com
+
+
+Realizar desbloqueio de IP no ambiente U
+
+Servidores: r-su6, r-su7, r-su8
+entrar como root
+
+Logar como root digitando: su
+Senha: dCLW2xk5
+
+
+iptables -S | grep "ip do usuário"
+
+Desbloqueio:
+
+iptables -D resultado apresentado no bloqueio
+Script pra consultar todos IPs em rotas:
+
+1) Criar um arquivo com todos os ips: vim ips
+Apertar a tecla "i" e colocar todos os ips (em anexo)
+
+2) Abrir uma screen: screen -S ips
+Executar o comando: for i in `cat ips`; do /home/arian/Downloads/./rblscheck.py -i $i | grep 0/ >> /tmp/ips.txt; done
+Apertar Ctrl+A+D para minimizar a screen
+
+3) Todos os IPs vão ficar salvo no arquivo /tmp/ips.txt
+Pra acompanhar em tempo real: tail -f /tmp/ips.txt
+verificar log de erro de autenticação
+
+cat/opt/zimbra/log/mailbox.log | grep dominio | grep -i "error"
+
+/opt/zimbra/bin/zmmailbox -z -m teste@inovateste.xsp.br gru /Contacts > /opt/zimbra/backup/Contacts.csv
+
+/opt/zimbra/bin/zmmailbox -z -m teste2@inovateste.xsp.br pru /Contacts /opt/zimbra/backup/Contacts.csv
+
+
+
+Colocando MB, GB pra deixar o relatório com melhor visual.
+
+Seleciona as colunas onde estão a cota do usuário.
+
+Clica com o botão direito, vai em Formatar Celulas
+Clica Definido pelo usuario
+
+Lá em baixo em Código, coloca:
+[>1000000]0.000,," TB";[>1000]0.000," GB";0.000" MB"
+
+tail -f /opt/zimbra/log/mailbox.log | grep controladoria@mardenfraga.com.br
+
+
+erro de autenticação
+cat /opt/zimbra/log/mailbox.log | grep -i error
+zmprov rim conta@dominio start
+
+
+zmprov rim conta@dmonio status
+for ACCOUNTS in `zmprov gadl dakhia.com.br`; 
+do zmprov gdlm $ACCOUNTS;
+done > /tmp/$ACCOUNTS_listas.csv
+Realizar Migração
+
+
+for CONTA in `cat agtransporte`; 
+do docker run --rm -ti marangoni/imapsync --host1 pop.veloxmail.com.br--host2 imap.c.inova.com.br --user1 $(echo $CONTA|cut -d ',' -f1) --password1 $(echo $CONTA|cut -d ',' -f2) --authuser2 admin@a.inova.com.br --password2 AmbC@%7865 --user2 $(echo $CONTA|cut -d ',' -f1) > imapsync_$CONTA; done
+Acessar o servidor ssh root@d-registry
+
+
+
+
+
+docker run -ti --rm inova/imapsync --buffersize 8192000 --nosyncacls --subscribe --syncinternaldates --ssl1 --ssl2 --authmech1 PLAIN --host1 192.168.6.64 --user1 restored_boleto@corengo.org.br  --authuser1 admin@zu1.u.inova.com.br --password1 'AmbU@@1222' --exclude 'Trash|Contacts|Emailed Contacts|Contatos' --allowsizemismatch --host2 192.168.6.64 --authmech2 PLAIN --authuser2 admin@zu1.u.inova.com.br --password2 'AmbU@@1222' --user2 boleto@corengo.org.br --nofoldersizes --reconnectretry1 10 --reconnectretry2 10 --delete2duplicates
+
+
+
+
+
+
+docker run -ti --rm inova/imapsync --buffersize 8192000 --nosyncacls --subscribe --syncinternaldates --ssl1 --ssl2 --authmech1 PLAIN --host1 10.0.4.223 --user1 restored_stephane.malaquias@imtep.com.br  --authuser1 admin@imtembox01.a.inova.com.br --password1 'Imt&p@17#$#' --exclude 'Trash|Contacts|Emailed Contacts|Contatos' --allowsizemismatch --host2 10.0.4.223 --authmech2 PLAIN --authuser2 admin@imtembox01.a.inova.com.br --password2 'Imt&p@17#$#' --user2 melissa.sobenko@imtep.com.br --nofoldersizes --reconnectretry1 10 --reconnectretry2 10 --regextrans2 's/^/Stephane\//'
+
+
+for CONTA in `cat contas`; do zmrestore -a $CONTA -ca -pre 11_ -restoreToTime "2019/02/11 18:00:00" -ignoreRedoErrors; done
+
+
+
+
+REALIZAR TESTE DE MIGRAÇÃO
+
+
+Acessar o servidor:
+ssh root@d-registry
+
+
+dentro de uma screen rodar o comando
+
+docker run --rm -ti marangoni/imapsync --host1 email-ssl.com.br --host2 imap.c.inova.com.br --user1 servicos@avaliar8.com.br --password1 '!@#$%67890avaliar8' --authuser2 admin@a.inova.com.br --password2 'AmbC@%7865' --user2 servicos@avaliar8.com.br --delete2duplicates > imapsync_servicos@avaliar8.com.br
+
+
+
+ls -> ver qual o arquivo da migração
+
+tail -f imapsync_conta@dominio.com.br -> ver o andamento da migração
+
+
+mkdir <nome da pasta>
+
+EMAIL-SSL.COM.BR
+
+Recalcular emails da caixa de uma conta
+
+zmprov rmc conta.com
+for ACCOUNTS in `zmprov gadl araupel.com.br`; do zmprov gdlm $ACCOUNTS;done
+
+
+
+Senha para Acessar a OABSP
+
+Gal0T31
+nomes dos servidores
+
+
+ACESSO AO SERVIDOR C
+34.194.194.61
+
+ACESSO VELOX
+10.0.1.44
+sem o final do comando
+
+# MBOX CORP
+192.168.6.62    r-zu1
+192.168.6.63    r-zu2
+192.168.6.67    r-zu3
+192.168.6.64    r-zu4
+192.168.6.65    r-zu5
+192.168.6.66    r-zu6
+192.168.6.76    r-zu7
+192.168.6.77    r-zu8
+192.168.6.16    r-zu9
+192.168.6.82    r-zu10
+
+# MBOX DEDICADO
+192.168.6.96    premierit01 premierti01
+192.168.6.52    shark01
+
+# MXhero
+192.168.6.83    sascar
+192.168.6.69    mxlite1
+192.168.6.79    mxlite2
+192.168.6.89    mxlite3
+192.168.6.80    mxfilter
+192.168.6.70    mxcorp1
+192.168.6.75    mxcorp2
+192.168.6.78    mxcorp3
+
+#OABSP
+10.204.8.2    r-zc1
+10.204.8.3    r-zc2
+10.204.8.18   r-zc3
+10.204.8.19   r-zc4
+10.204.8.4    r-dc1
+10.204.8.6    r-sc1
+10.204.8.9    r-sc4
+acessar 
+
+52.179.120.21
+
+SCP 
+
+
+
+verificar log
+Baixar conteúdo
+zmmailbox -z -m <conta> Getresturl '/?fmt=tgz' > /opt/zimbra/backup/<arquivo>.tgz
+
+sobe o tgz na conta
+zmmailbox -z -m <conta> -t 0 postRestURL "//?fmt=tgz&resolve=skip" /opt/zimbra/backup/<arquivo>.tgz
+
+
+SENHA DA CHAVE DOS SERVIDORES: g21a07n99
+
+*Verificar IP bloqueado velox:*
+
+Servidor: 10.0.1.142 - PARA VERIFICAR BLOQUEIO POR EXCESSO DE LOGIN INCORRETO
+
+Logar como root digitando: su
+Senha: dCLW2xk5
+
+Comando: iptables -S | grep 186.212.133.70
+
+Obs.: Só trocar o IP dentro das aspas. (edited)
+
+*Desbloquear IP*
+iptables -D fail2ban-zimbra-account -s 189.48.252.148/32 -j REJECT --reject-with icmp-port-unreachable
+
+*Verificar Bloqueio por envios no velox:*
+Servidor: 10.0.1.19
+Comando para verificar: sudo tmscli -g --search '*<conta>*'
+Comando para deletar, caso estiver bloqueado: sudo tmscli -d --del-lookup '*<conta>*'
+
+
+
+Comando para verificar os menbros de uma lista
+
+zmprov gdl nome da lista
+
+shirlei.qdes@samper.com.br
+
+
+
+cat /var/log/mail.log | grep "reject" | grep -i "ip 186.212.127.158"
+jeito 1
+
+sudo egrep rh@funaripaisagismo.com.br /var/log/mail.log | grep rh.fiorin@uol.com.br
+
+
+jeito 2 - entrar como su
+
+sudo cat /var/log/mail.log | grep damaso.neto@zema.com | grep inova.teste@gmail.com
+Entrar r-su6 ou 7
+
+/usr/local/bin/postpiting-list.pl | grep <conta>
+Fazer a migração através de zmtozmig
+
+
+editar o arquivo:
+vim /opt/zimbra/conf/zmztozmig.conf
+
+rodar o arquivo:
+/opt/zimbra/libexec/zmztozmig

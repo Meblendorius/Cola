@@ -1,0 +1,4 @@
+ssh thiago.lemos@novaquest01
+sudo su zimbra
+zmprov ca conta senha- inserir a conta e senha para criação
+zmprov sac conta nome_cos - inserir conta e Conta de serviço.

@@ -1,0 +1,11 @@
+zmbackuppquery -a luiz.camargo@quality.com.br
+ou
+zxsuite backup getAccountInfo luiz.camargo@quality.com.br
+
+
+zxsuite backup doRestoreOnNewAccount administrativo@sfoggio.com.br restored_administrativo@sfoggio.com.br "21/10/2021 10:00:00" 
+
+
+
+
+zxsuite backup monitor f569b61d-4ce3-4788-82ac-a1f87a385701

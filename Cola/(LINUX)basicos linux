@@ -1,0 +1,29 @@
+cut -f 
+-d delimitador
+corta por colunas
+
+head -n  escolhe o numero de linhas a exibir (10 por padrão)
+
+
+sort- organiza em ordem alfabetica
+-n utiliza conjuntos numéricos
+
+split- dividir arquivos
+-l=n linhas
+-b=n bytes
+
+tail-f mostra arquivos em tempo real
+
+tac cat inverso
+
+wc contagem de caracteres, palavras e linhas de um arquivo.
+
+-l linhas
+-w palavras
+-c caracteres
+
+uniq elemina linhas duplicadas que sejam adjacentes
+-d linhas duplicas
+-u linhas não duplicadas
+
+

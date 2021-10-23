@@ -1,0 +1,6 @@
+migração
+usa porta do IMAP 143/993
+porta 443 HTTP com certificado
+tudo que ele precisa da senha da conta
+eles nao tem acesso a porta 7071
+não fazemos migração para sair

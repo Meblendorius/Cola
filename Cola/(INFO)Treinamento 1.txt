@@ -1,0 +1,47 @@
+Thiago,
+
+Bem vindo a Inova.
+Espero que goste do seu novo serviço,  espero que você aprenda rápido tudo para nos ajudar o quanto antes, também para melhorar seu conhecimento em TI e melhorar seu futuro na empresa.
+
+Em anexo estou deixando seu treinamento, siga ele antes de ler os outros anexos, se puder olhe o outro anexo quando informar no treinamento para ver outro anexo para você seguir o fluxo sem se perder.
+
+De qualquer forma no Zoom irei explicar cada um antes de você começar qualquer coisa.
+
+
+Há alguns acessos que você ainda não possui, então se você tentar acessar algo e der erro ou você simplesmente não ter o login, me avise mas provavelmente já estarei vendo.
+
+Acessos:
+
+Portal de chamados
+
+link: https://inovanet.desk.ms/?LoginTicket
+Usuário: thiago.lemos
+Senha: 4@2vPCYT
+
+Zoho onde esta os acessos de todos os ambientes e serviços: A operação ainda vai criar
+
+
+Confluence é onde esta registrado nossos procedimentos e tutoriais da Inova, quando você completar o treinamento e estiver fazendo chamado, o primeiro e melhor lugar a se procurar como fazer é no Confluence.
+
+Link: https://inovacorp.atlassian.net/wiki/
+Login: operacao@inova.net
+Senha: 1sta+his1
+
+Acesse o campo de busca, selecione Confluence e busca o que precisa.
+
+Para criar seus acessos aos servidores assim você consegue acessar por linha de comando, preciso que digite o seguinte comando no painel:
+
+sudo ssh-keygen
+
+Quando pedir o caminho, de preferencia coloca em sua home/.ssh, provavelmente o nome vai ser thiago.lemos/.ssh.
+
+Depois você me manda o arquivo que esta na home/.ssh chamado de:
+id_rsa.pub
+Que vou mandar para operação criar seus acessos.
+
+É importante você colocar seu nome quando for abrir o computador pela primeira vez como thiago.lemos, vai facilitar sua vida vai por mim!
+
+
+Lembre-se que a área de TI é isso, você vai ler e muito, mas depois que você começa a usar e ver que pegou o jeito, não há coisa melhor.
+
+Conto com você, vamo pra cima.

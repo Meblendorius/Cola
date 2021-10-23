@@ -1,0 +1,8 @@
+Apontamentos MX
+
+Nome Tipo Valor
+pop CNAME pop.c.inova.com.br
+smtp CNAME smtp.c.inova.com.br
+imap CNAME imap.c.inova.com.br
+webmail CNAME webmail.c.inova.com.br
+@ MX mxhero-pool01.a.inova.com.br 

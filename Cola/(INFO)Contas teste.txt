@@ -1,0 +1,69 @@
+    Contas de teste do Gmail
+
+login: inova.teste@gmail.com
+senha: plo147258
+
+login: suporte.inova2@gmail.com
+senha: plo123456
+
+
+Contas de teste do HOTMAIL.COM
+
+inovateste302@hotmail.com
+
+senha: plo147258
+
+inova.tecnologias302@hotmail.com
+
+Senha: inova@2015
+
+
+    Conta de teste do Yahoo
+
+login: inova.test
+senha: plo369
+
+Login: inova.tecnologia@yahoo.com.br
+
+senha Plo1472588
+
+    Conta de Teste Terra (criada em 2014)
+
+login: suporteinova@terra.com.br
+
+senha: Inova@2014
+
+    Usuario do Clube do Hardware
+
+login: inova2010
+
+senha: sta+his
+
+    Conta de Teste Localweb
+
+acesso: mail.genetica.com.br
+
+login: katia
+
+senha: 123mudar
+
+    Conta de Teste IG oabsp.or.br
+
+acesso: webmail.oabsp.org.br
+
+login: inova@adv.oabsp.org.br
+
+senha: sta+his
+
+    Conta de Teste Globomail
+
+login: inova.teste@globomail.com
+
+senha: plo147258
+
+
+    Conta de Teste IG
+
+login: inova.teste@ig.com.br
+
+senha: plo147258

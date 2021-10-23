@@ -1,0 +1,13 @@
+Prezado,
+Bom dia.
+
+Adicionamos sua conta para admin do zimbra.
+Acesse o link https://webmail.c.inova.com.br:7071/zimbraAdmin/
+
+Para adicionar contas, após o login, vá em gerenciar no lado esquerdo, depois vá em configurações > novo
+
+Para excluir, localize a conta no painel admin e clique com o botão direito na conta > opção apagar
+
+Caso a conta seja grande, mudará o status para "manutenção", após o termino da exclusão sumirá a conta.
+
+Qualquer dúvida estamos a inteira disposição.

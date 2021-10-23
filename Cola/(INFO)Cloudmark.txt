@@ -1,0 +1,1 @@
+cloudmark- bloqueia spam de cabeçalho para todos os dominios

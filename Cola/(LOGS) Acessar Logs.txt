@@ -1,0 +1,42 @@
+servidor do U
+entrada r-su3 4 5
+saida r-su 6 7 
+
+Para acesso aos filtros:
+root@asus:/home/thiagolemos# ssh -i /home/thiagolemos/Downloads/inova.pem centos@3.218.154.111
+
+
+grep -1, quando o arquivo não aparece, mais uma linha
+ir atraz do destinatario 
+
+mencionou ip, r-tu1 para usar myips
+
+najas- gerenciador do servidor
+
+ssh thiago.lemos@r-zu9
+
+cat /var/log/mail.log | grep brunno_eduardo@unimedituiutaba.coop.br| grep -1 yahoo.com
+
+
+
+zmbackupquery -a usuario
+
+caminho:(log de saida- envio de mensagem) caixa do usuario-> máquina de saida-> MXhero
+
+(
+
+cat /var/log/mail.log.4.gz | zgrep compras@armarinhos25.com.br | zgrep vera.miranda@mzf4.com 
+
+
+
+ssh thiagolemos@corpmbox01
+
+corpmbox- ambiente c
+rzu- ambiente u
+
+
+caso não tenha acesso- perdir pra alguem rodar esse comando
+mkdir /home/thiago.lemos/ ; mkdir /home/thiago.lemos/.ssh ; touch /home/thiago.lemos/.ssh/authorized_keys ; chown -R thiago.lemos:allusers /home/thiago.lemos/ ; echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDXtVnWj740+5/QjRsSkjtw/pyuT3z3SYYzf0XKiglg1Aeb54tTSN07p4r2Y4GX0DSBtuwy7MGOPRymqjOCSheqQfZkHh3c91+ZO7VzF8kMGfOfA2mqV7hPZeI8PLfIo3QhWqaI5i4f+NFvAkMj/8AnNl5X+m+xzOgxabcbvF7or/cG5DiVxkhsvOnaO579HOS7GIUu7sC63LhGYXSsh7JtBKhLhKD6CPpqn1KEC+YH8mVc2ohJyanZmHryUhTVRrNv86lYGCaKKgCS5YbkZDxmceSOcVrdQy6M/Kns/ANokv7BaUquPdZ6G5GLr0/B9SvDSRYI/6QAXRHYPfDLq1wacAG8exO9IbtO4w9h+PghHN10jm/+us6CZaqriwZzZVTF2VRPE78hZFXN5M/lhCM7wHCrNOLBpKLX/beo+i9HzlyitLqV/XTNiSbEGeppZjdJRdKJ/yu4S+n1lww7NV+D2AQTx4OxX0iesp3zQfcO93zjsGRi9kN7pmmrSzRgJ3M= thiagolemos@asus" > /home/thiago.lemos/.ssh/authorized_keys
+
+
+

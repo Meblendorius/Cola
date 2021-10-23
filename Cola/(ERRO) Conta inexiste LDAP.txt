@@ -1,0 +1,15 @@
+to many hoops 
+
+endereço nao encontrado/bloqueado.
+
+verificar ldap no mxhero
+
+ver se o ele esta apontado para o lugar ccerto
+
+ir no mxhero
+verificar os servidor do dominio mx
+tirar alteração de senha
+configurar o ldap na acaba de contas
+sincronizar as contas
+Ambiente C 10.0.2.9 = local onde tem tudo no C
+senha:7HZ7kyyp

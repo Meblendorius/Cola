@@ -1,0 +1,4 @@
+Cada conta pode realizar 50 envios a cada 5 min e 660 envios a cada 24hrs. 
+
+caso queira aumentar, precisa do IP fixo se for U
+ambiente C é outra coisa
